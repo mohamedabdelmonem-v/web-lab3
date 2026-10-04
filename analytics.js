@@ -28,3 +28,8 @@ function findTopStudent(students) {
 
     });
 }
+// filterStudents function takes an array of students and a criteria function as parameters
+function filterStudents(students, criteriaFn) {
+
+    return students.filter(criteriaFn);
+}
