@@ -50,3 +50,22 @@ fetchStudents(rawData => {
         "Class Average for Course 101:",
         avg101.toFixed(2)
     ); 
+
+    // top student based on average grade
+const topStudent =
+        findTopStudent(students);
+
+    console.log(
+        `Top Student: ${topStudent.name} (Average: ${topStudent.getAverage()})`
+    );
+
+    // filter students who have taken course 102
+    const course102Students =
+        filterStudents(
+            students,
+            student =>
+                student.courses.some(
+                    course =>
+                        course.courseId === 102
+                )
+        );
