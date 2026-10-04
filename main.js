@@ -69,3 +69,12 @@ const topStudent =
                         course.courseId === 102
                 )
         );
+        // log the names of students who have taken course 102
+          console.log(
+        "Students in Course 102:",
+        course102Students
+            .map(student => student.name)
+            .join(", ")
+    );
+ 
+});
