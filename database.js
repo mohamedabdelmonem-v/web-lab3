@@ -5,7 +5,7 @@ function fetchStudents(callback) {
     console.log("Fetching data from database...");
 // after 2 seconds, call the callback function with the data
     setTimeout(() => {
-
+ 
         const data = [
             {
                 id: 1,
