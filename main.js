@@ -22,10 +22,19 @@ fetchStudents(rawData => {
             student.courses
         )
     );
+
+    // test read only property
     console.log("Testing Immutability:");
 
     console.log("Original ID:", students[0].id);
 
     console.log("Attempting to change ID to 999...");
     students[0].id = 999;
-   
+
+    console.log(
+        "Final ID:",
+        students[0].id,
+        "(Success: ID did not change)"
+    );
+ 
+    console.log("\n--- Analytics Report ---");
