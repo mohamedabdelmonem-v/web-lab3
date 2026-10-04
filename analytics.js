@@ -16,4 +16,15 @@ const grades = students
     );
 
     return total / grades.length;
-}    
+}   
+
+function findTopStudent(students) {
+// use the reduce method to find the student with the highest average grade
+    return students.reduce((top, current) => { 
+
+        return current.getAverage() > top.getAverage()
+            ? current
+            : top;
+
+    });
+}
