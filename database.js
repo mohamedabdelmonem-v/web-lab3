@@ -23,7 +23,7 @@ function fetchStudents(callback) {
                     { courseId: 102, grade: 95 }
                 ]
             },
-            {
+            { 
                 id: 3,
                 name: "Ahmet",
                 courses: [
