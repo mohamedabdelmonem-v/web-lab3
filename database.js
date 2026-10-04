@@ -32,7 +32,7 @@ function fetchStudents(callback) {
                 ]
             }
         ];
-
+// call the callback function with the data
         callback(data);
 
     }, 2000);
