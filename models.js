@@ -28,4 +28,5 @@ constructor(id, name, courses) {
         return total / this.courses.length;
     }
 }
+// export the Student class
 export default Student;
