@@ -1,7 +1,30 @@
 // models.js
 // create a class for Student
 class Student {
+constructor(id, name, courses) {
 
+        Object.defineProperty(this, "id", {
+            value: id,
+            writable: false,
+            enumerable: true,
+            configurable: false
+        });
 
+        this.name = name;
+        this.courses = courses;
+    }
 
+    addCourse(courseId, grade) {
+        this.courses.push({ courseId, grade });
+    }
+
+    getAverage() {
+        const total = this.courses.reduce(
+            (sum, course) => sum + course.grade,
+            0
+        );
+
+        return total / this.courses.length;
+    }
 }
+export default Student;
