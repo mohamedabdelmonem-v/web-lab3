@@ -37,5 +37,4 @@ function fetchStudents(callback) {
 // log a message to indicate that the data has been fetched
     }, 2000);  
 }
-
-export default fetchStudents;
+export default fetchStudents; 
