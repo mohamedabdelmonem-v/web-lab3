@@ -33,3 +33,9 @@ function filterStudents(students, criteriaFn) {
 
     return students.filter(criteriaFn);
 }
+// export the functions
+ export {
+    calculateClassAverage,
+    findTopStudent,
+    filterStudents
+}; 
