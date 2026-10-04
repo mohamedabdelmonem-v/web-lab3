@@ -6,15 +6,14 @@ const grades = students
         .map(student =>
             student.courses.find(
                 course => course.courseId === courseId
-            )
+            ) 
         )
- .filter(course => course);
-
+  .filter(course => course);
+// calculate the average grade for the specified courseId
     const total = grades.reduce(
         (sum, course) => sum + course.grade,
         0
     );
 
     return total / grades.length;
-
-}
+}    
