@@ -38,3 +38,15 @@ fetchStudents(rawData => {
     );
  
     console.log("\n--- Analytics Report ---");
+     
+    // calculate the class average for course 101
+    const avg101 =
+        calculateClassAverage(
+            students,
+            101
+        );
+
+    console.log(
+        "Class Average for Course 101:",
+        avg101.toFixed(2)
+    ); 
