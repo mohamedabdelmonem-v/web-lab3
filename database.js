@@ -7,7 +7,7 @@ function fetchStudents(callback) {
     setTimeout(() => {
  
         const data = [
-            {
+            { 
                 id: 1,
                 name: "Ali",
                 courses: [
@@ -15,7 +15,7 @@ function fetchStudents(callback) {
                     { courseId: 102, grade: 85 }
                 ]
             },
-            {
+            { 
                 id: 2,
                 name: "Zeynep",
                 courses: [
