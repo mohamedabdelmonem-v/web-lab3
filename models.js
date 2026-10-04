@@ -16,7 +16,7 @@ constructor(id, name, courses) {
 
     addCourse(courseId, grade) {
         this.courses.push({ courseId, grade });
-    }
+    } 
 
     getAverage() {
         const total = this.courses.reduce(
