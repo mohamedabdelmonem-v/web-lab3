@@ -1,9 +1,9 @@
 // database.js
 // simulate a database fetch with a callback function
 function fetchStudents(callback) {
-
+// simulate a delay of 2 seconds to mimic a real database fetch
     console.log("Fetching data from database...");
-
+// after 2 seconds, call the callback function with the data
     setTimeout(() => {
 
         const data = [
