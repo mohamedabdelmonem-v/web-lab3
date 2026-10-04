@@ -34,8 +34,8 @@ function fetchStudents(callback) {
         ];
 // call the callback function with the data
         callback(data);
-
-    }, 2000);
+// log a message to indicate that the data has been fetched
+    }, 2000);  
 }
 
 export default fetchStudents;
